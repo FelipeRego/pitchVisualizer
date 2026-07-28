@@ -1,5 +1,7 @@
 # Pitch Visualizer
 
+[Open the live prototype](https://pitch-visualizer.feliperego.chatgpt.site)
+
 A browser-only React app for live pitch practice. It listens to your microphone,
 detects monophonic pitch in real time, shows the current note and frequency, and
 builds a histogram of the most common notes you sing or play.
