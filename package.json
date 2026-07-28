@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b tsconfig.app.json && node scripts/clean-sites-build.mjs && vite build --config vite.sites.config.ts && node scripts/prepare-sites-build.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -16,9 +16,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.3",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.3",
     "typescript": "^5.6.3",
     "vite": "^8.1.4",
     "vitest": "^4.1.10"

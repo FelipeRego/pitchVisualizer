@@ -1,4 +1,8 @@
-import { Activity, Info, Mic, RotateCcw, Square } from "lucide-react";
+import Activity from "lucide-react/dist/esm/icons/activity.js";
+import Info from "lucide-react/dist/esm/icons/info.js";
+import Mic from "lucide-react/dist/esm/icons/mic.js";
+import RotateCcw from "lucide-react/dist/esm/icons/rotate-ccw.js";
+import Square from "lucide-react/dist/esm/icons/square.js";
 import { useEffect, useMemo, useState } from "react";
 import type { NoteName, PitchFrame, TargetNote, TuningMode } from "./types";
 import {
