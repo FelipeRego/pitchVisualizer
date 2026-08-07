@@ -1,5 +1,6 @@
 import { Activity, Info, Mic, RotateCcw, Square } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import type { NoteName, PitchFrame, TargetNote, TuningMode } from "./types";
 import {
   A4_FREQUENCY,
@@ -288,6 +289,7 @@ export function App() {
           </section>
         </aside>
       </section>
+      <SpeedInsights />
     </main>
   );
 }
